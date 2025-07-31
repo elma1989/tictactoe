@@ -1,3 +1,14 @@
+@font-face {
+    font-family: Raleway;
+    src: url(assets/fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;;
+    src: url(assets/fonts/Raleway-Bold.ttf);
+    font-weight: bold;
+}
+
 *  {
     margin: 0;
     padding: 0;
@@ -5,4 +16,77 @@
     position: relative;
     text-decoration: none;
     scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font: 16px Raleway, sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1920px;
+}
+
+header {
+    height: 10dvh;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    height: 5dvh;
+}
+
+main {
+    height: auto;
+    min-height: 85dvh;
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 3px solid #fff;
+    height: 80px;
+    width: 80px;
+}
+
+tr:first-child td {
+    border-top: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+td:last-child {
+    border-right: none;
 }
