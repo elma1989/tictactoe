@@ -65,14 +65,19 @@ main {
 
 }
 
+table, tr, td {
+    margin: 0;
+    padding: 0;
+}
+
 table {
     border-collapse: collapse;
 }
 
 td {
     border: 3px solid #fff;
-    height: 80px;
-    width: 80px;
+    height: 84px;
+    width: 84px;
     text-align: center;
 }
 

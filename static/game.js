@@ -7,4 +7,24 @@ export class Game {
         this.circle = new Circle();
         this.currentPlayer = this.cross;
     }
+
+    switchPlayer() {
+        this.currentPlayer = this.currentPlayer instanceof Cross ? this.circle : this.cross;
+    }
+
+    makeMove(index) {
+        if (this.fields[index] === null) {
+            this.fields[index] = this.currentPlayer;
+            this.currentPlayer.render(index);
+            this.switchPlayer();
+        }
+    }
+
+    clickFields() {
+        document.querySelectorAll('.field').forEach((field, index) => {
+            field.addEventListener('click', () => {
+                this.makeMove(index);
+            });
+        });
+    }
 }
