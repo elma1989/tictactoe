@@ -73,6 +73,7 @@ td {
     border: 3px solid #fff;
     height: 80px;
     width: 80px;
+    text-align: center;
 }
 
 tr:first-child td {
