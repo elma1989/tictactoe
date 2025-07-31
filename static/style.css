@@ -1,3 +1,8 @@
-body {
-    background: #000;
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
